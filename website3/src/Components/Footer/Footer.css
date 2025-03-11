@@ -1,0 +1,180 @@
+.footer{
+    background-color: #333; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    
+  }
+  
+  /* Footer Info Section */
+  .footer-container .footer-info {
+    max-width: 50%;
+  }
+  
+  .footer-container .footer-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-container .footer-info address {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .footer-container .footer-info address br {
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p{
+    color: white;
+  }
+  
+  .footer-container .footer-info button {
+    background-color: #5C8DFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-container .footer-info button:hover {
+    background-color: #406FD9;
+  }
+  
+  .footer-container .footer-info button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-container .footer-info button p {
+    margin: 0;
+    font-size: 1em;
+  }
+  .footer-container .footer-logo img {
+    max-width: 350px;
+    height: auto;
+    margin: 0 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-container .footer-info {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-container .footer-logo img {
+      max-width: 120px;
+      margin-top: 20px;
+    }
+    
+  }
+.address-info {
+  display: flex;
+  padding: 40px;
+  background-color: #333; 
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+.address-info .domestic, .address-info .international {
+  width: 29%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.address-info h2 {
+  font-size: 1.8em;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.address-info address {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ddd; 
+}
+
+.address-info address br {
+  margin-bottom: 10px;
+}
+
+.address-info .form {
+  width: 30%;
+  padding: 20px;
+  background-color: #444; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 740px;
+}
+
+.address-info .form h4 {
+  font-size: 1.8em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.address-info .form p {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.address-info .form .form-group {
+  margin-bottom: 20px;
+}
+
+.address-info .form .form-group input,
+.address-info .form .form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.address-info .form .form-group button {
+  width: 100%;
+  padding: 14px;
+  background-color: #5C8DFF;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.address-info .form .form-group button:hover {
+  background-color: #406FD9;
+}
+
+@media (max-width: 768px) {
+  .address-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .address-info .domestic,
+  .address-info .international,
+  .address-info .form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
