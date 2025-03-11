@@ -12,7 +12,7 @@ const NavBar = () => {
         </div>
         <ul className='list'>          
           <li><NavLink to="/" className={({isActive})=>isActive? "active-link":"no-active"}>Home</NavLink></li>
-          <li><NavLink to="/About us" className={({isActive})=>isActive? "active-link":"no-active"}>About us</NavLink></li>
+          <li><NavLink to="/About-Us" className={({isActive})=>isActive? "active-link":"no-active"}>About us</NavLink></li>
           <li><NavLink to="/Study Abroad" className={({isActive})=>isActive? "active-link":"no-active"}>Study Abroad </NavLink></li>
           <li><NavLink to="/Other Services" className={({isActive})=>isActive? "active-link":"no-active"}>Other Services</NavLink></li>
           <li><NavLink to="/Gallery" className={({isActive})=>isActive? "active-link":"no-active"}>Gallery</NavLink></li>

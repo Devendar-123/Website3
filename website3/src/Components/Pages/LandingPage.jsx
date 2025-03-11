@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import MainTabUK from "../Abroad/MainTabUK";
 
+import Home from "../Home/Home";
+import About from "../About-Us/About";
 const LandingPage = () => {
   const router = createBrowserRouter([
     {
@@ -11,15 +13,17 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
+          <Home/>
         </div>
       ),
     },
 
     {
-      path: "/About us",
+      path: "/About-Us",
       element: (
         <div>
           <NavBar />
+          <About/>
         </div>
       ),
     },
