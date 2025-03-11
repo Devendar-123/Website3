@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import FirstTab from './FirstTab';
+import { Typography } from '@mui/material';
+import './MainTab.css'
+import SecondTab from './SecondTab';
+import ThirdTab from './ThirdTab';
+
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,24 +48,32 @@ function MainTabUK() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Education" {...a11yProps(0)} />
-          <Tab label="Universities" {...a11yProps(1)} />
-          <Tab label="Scholarships" {...a11yProps(2)} />
-        </Tabs>
+    <>
+    <Box id="main-container">
+      <Box id="uk-img">
+          <img src="/Images/UK-edu.jpg" alt="uk" />
       </Box>
-      <CustomTabPanel value={value} index={0}>
-        Education
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
-      Universities
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-      Scholarships
-      </CustomTabPanel>
-    </Box>
+      <Box sx={{ width: '60%' , ml:'27%'}}>
+        <Box >
+          <Typography id='heading-uk'>Study in UK</Typography>
+          <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" >
+            <Tab label="Education" {...a11yProps(0)} className="tabs"/>
+            <Tab label="Universities" {...a11yProps(1)} className="tabs" />
+            <Tab label="Scholarships" {...a11yProps(2)} className="tabs"/>
+          </Tabs>
+        </Box>
+        <CustomTabPanel value={value} index={0}>
+          <FirstTab/>
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={1}>
+          <SecondTab/>
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={2}>
+          <ThirdTab/>
+        </CustomTabPanel>
+      </Box>
+    </Box>   
+    </>
   );
 }
 

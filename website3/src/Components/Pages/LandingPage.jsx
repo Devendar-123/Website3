@@ -6,6 +6,7 @@ import MainTabUK from "../Abroad/MainTabUK";
 
 import Home from "../Home/Home";
 import About from "../About-Us/About";
+import Gallery from "../Gallery/Gallery";
 const LandingPage = () => {
   const router = createBrowserRouter([
     {
@@ -49,6 +50,7 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
+          <Gallery/>
         </div>
       ),
     },
