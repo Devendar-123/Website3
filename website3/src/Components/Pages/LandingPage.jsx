@@ -6,6 +6,7 @@ import MainTabUK from "../Abroad/MainTabUK";
 
 import Home from "../Home/Home";
 import About from "../About-Us/About";
+import Footer from "../Footer/Footer";
 const LandingPage = () => {
   const router = createBrowserRouter([
     {
@@ -74,6 +75,7 @@ const LandingPage = () => {
   return (
     <div>
       <RouterProvider router={router}/>
+      <Footer/>
     </div>
   );
 };
