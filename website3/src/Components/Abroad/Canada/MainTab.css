@@ -1,0 +1,22 @@
+#heading-uk{
+    font-size: 2rem;
+    color: rgba(20, 120, 202, 0.984);
+}
+#uk-img img {
+    height: 220px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 9px;
+}
+.tabs:hover {
+    background-color: #085490;
+    color: #fff;
+}
+#main-container {
+    background-image: url('https://e0.pxfuel.com/wallpapers/5/395/desktop-wallpaper-educational-learning.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

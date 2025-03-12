@@ -15,6 +15,11 @@ import Visa from "../Visa/Visa";
 import Admission from "../Admission/Admission";
 import France from "../Abroad/France/France";
 import USA from "../Abroad/USA/USA";
+import MainTabAus from "../Abroad/Australia/MainTabUK";
+import MainTabGer from "../Abroad/Germany/MainTabUK";
+import MainTabNew from "../Abroad/NewZeland/MainTabUK";
+import MainTabCan from "../Abroad/Canada/MainTabUK";
+
 
 const LandingPage = () => {
   const router = createBrowserRouter([
@@ -60,6 +65,11 @@ const LandingPage = () => {
         <div>
           <NavBar />
           <France/>
+      path: "/Study Abroad/MainTabAus",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabAus/>
         </div>
       ),
     },
@@ -69,6 +79,29 @@ const LandingPage = () => {
         <div>
           <NavBar />
           <USA/>
+      path: "/Study Abroad/MainTabNew",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabNew/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabGer",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabGer/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabCan",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabCan/>
         </div>
       ),
     },

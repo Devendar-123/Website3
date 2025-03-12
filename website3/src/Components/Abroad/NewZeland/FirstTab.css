@@ -1,0 +1,82 @@
+.container-tab-uk {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.check-circle {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.check-circle li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px; 
+}
+
+.check-circle li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.container-tab-uk ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container-tab-uk ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.btn button {
+    background-color: #e84c13; 
+    color: white; 
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn button:hover {
+    background-color: #c25239;
+}
+
+@media (max-width: 768px) {
+    .container-tab-uk {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 20px; 
+    }
+
+    .check-circle li {
+        font-size: 16px;
+    }
+
+    .btn button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
