@@ -1,0 +1,145 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #085490;
+    color: #085490;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+  
+ul.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+  
+ul.list li {
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+ul.list li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+  
+ ul.list li a:hover {
+    color: #e74c3c;
+    transform: translateY(-3px);
+}
+  
+.active-link {
+    color: #1abc9c;
+    font-weight: 600;
+    border-bottom: 2px solid #1abc9c;
+}
+  
+  .no-active {
+    color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 200px;
+  z-index: 1;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li{
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 15px;
+    }
+  
+    ul.list {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    ul.list li {
+      font-size: 16px;
+      width: 100%;
+      text-align: left;
+    }
+
+    ul.list li a:hover {
+      color: #e74c3c;
+    }
+  
+
+    .active-link {
+      font-weight: 600;
+      border-bottom: 2px solid #1abc9c;
+    }
+}
+  
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.dropdown-content li {
+  padding: 8px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content .active-link {
+  font-weight: bold;
+}
