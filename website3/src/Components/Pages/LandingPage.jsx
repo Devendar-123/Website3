@@ -13,6 +13,8 @@ import Counselling from "../Counselling/Counselling";
 import ForeignExchange from "../ForeignExchange/ForeignExchange";
 import Visa from "../Visa/Visa";
 import Admission from "../Admission/Admission";
+import France from "../Abroad/France/France";
+import USA from "../Abroad/USA/USA";
 import MainTabAus from "../Abroad/Australia/MainTabUK";
 import MainTabGer from "../Abroad/Germany/MainTabUK";
 import MainTabNew from "../Abroad/NewZeland/MainTabUK";
@@ -45,12 +47,11 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
-          
         </div>
       ),
     },
     {
-      path: "/Study Abroad/MainTabUk",
+      path: "/Study Abroad/MainTabUK",
       element: (
         <div>
           <NavBar />
@@ -59,6 +60,11 @@ const LandingPage = () => {
       ),
     },
     {
+      path: "/Study Abroad/France",
+      element: (
+        <div>
+          <NavBar />
+          <France/>
       path: "/Study Abroad/MainTabAus",
       element: (
         <div>
@@ -68,6 +74,11 @@ const LandingPage = () => {
       ),
     },
     {
+      path: "/Study Abroad/USA",
+      element: (
+        <div>
+          <NavBar />
+          <USA/>
       path: "/Study Abroad/MainTabNew",
       element: (
         <div>

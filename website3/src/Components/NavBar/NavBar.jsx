@@ -15,7 +15,9 @@ const NavBar = () => {
           <li><NavLink to="/About-Us" className={({isActive})=>isActive? "active-link":"no-active"}>About us</NavLink></li>
           <li className='dropdown'><NavLink to="/Study Abroad" className={({isActive})=>isActive? "active-link":"no-active"}>Study Abroad </NavLink>
           <ul className="dropdown-content">
-              <li><Link to="/Study Abroad/MainTabUk">UK</Link></li>
+              <li><Link to="/Study Abroad/MainTabUK">Study in UK</Link></li>
+              <li><Link to="/Study Abroad/France">Study in France</Link></li>
+              <li><Link to="/Study Abroad/USA">Study in USA</Link></li>
               <li><Link to="/Study Abroad/MainTabAus">Australia</Link></li>
               <li><Link to="/Study Abroad/MainTabNew">New Zealand</Link></li>
               <li><Link to="/Study Abroad/MainTabGer">Germany</Link></li>

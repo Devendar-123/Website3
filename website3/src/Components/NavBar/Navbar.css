@@ -133,7 +133,7 @@ ul.list li a {
 }
 
 .dropdown-content li {
-  padding: 8px 16px;
+  padding: 2px 0px;
 }
 
 .dropdown:hover .dropdown-content {
