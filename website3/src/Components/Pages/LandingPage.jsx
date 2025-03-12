@@ -7,6 +7,9 @@ import Home from "../Home/Home";
 import About from "../About-Us/About";
 import Gallery from "../Gallery/Gallery";
 import Footer from "../Footer/Footer";
+import Story from "../Stories/Story";
+
+
 const LandingPage = () => {
   const router = createBrowserRouter([
     {
@@ -59,6 +62,15 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
+        </div>
+      ),
+    },
+    {
+      path: "/Success Stories/Test",
+      element: (
+        <div>
+          <NavBar />
+          <Story/>
         </div>
       ),
     },
