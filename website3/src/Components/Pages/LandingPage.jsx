@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "../Contact/Contact";
-import MainTabUK from "../Abroad/MainTabUK";
+import MainTabUK from "../Abroad/Uk/MainTabUK";
 import Home from "../Home/Home";
 import About from "../About-Us/About";
 import Gallery from "../Gallery/Gallery";
@@ -13,6 +13,11 @@ import Counselling from "../Counselling/Counselling";
 import ForeignExchange from "../ForeignExchange/ForeignExchange";
 import Visa from "../Visa/Visa";
 import Admission from "../Admission/Admission";
+import MainTabAus from "../Abroad/Australia/MainTabUK";
+import MainTabGer from "../Abroad/Germany/MainTabUK";
+import MainTabNew from "../Abroad/NewZeland/MainTabUK";
+import MainTabCan from "../Abroad/Canada/MainTabUK";
+
 
 const LandingPage = () => {
   const router = createBrowserRouter([
@@ -40,7 +45,52 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
+          
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabUk",
+      element: (
+        <div>
+          <NavBar />
           <MainTabUK/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabAus",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabAus/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabNew",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabNew/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabGer",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabGer/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabCan",
+      element: (
+        <div>
+          <NavBar />
+          <MainTabCan/>
         </div>
       ),
     },
