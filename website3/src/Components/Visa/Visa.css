@@ -1,0 +1,71 @@
+
+.visa-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .visa-img {
+    flex: 1 1 40%; 
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .visa-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .visa-text {
+    flex: 1 1 55%; 
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .visa-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .visa-text span {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify; 
+  }
+ 
+  @media (max-width: 768px) {
+    .visa-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .visa-img {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .visa-text {
+      width: 100%;
+      text-align: center; 
+    }
+  
+    .visa-text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .visa-text span {
+      font-size: 1rem;
+    }
+  }
+  

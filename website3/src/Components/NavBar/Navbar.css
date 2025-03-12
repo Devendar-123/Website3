@@ -48,6 +48,42 @@ ul.list li a {
     color: #fff;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 200px;
+  z-index: 1;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li{
+  list-style-type: none;
+}
+
 @media (max-width: 768px) {
     .nav-container {
       flex-direction: column;
