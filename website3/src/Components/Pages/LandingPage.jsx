@@ -65,6 +65,10 @@ const LandingPage = () => {
         <div>
           <NavBar />
           <France/>
+        </div>
+      ),
+    },
+    {
       path: "/Study Abroad/MainTabAus",
       element: (
         <div>
@@ -79,6 +83,10 @@ const LandingPage = () => {
         <div>
           <NavBar />
           <USA/>
+        </div>
+      ),
+    },
+    {
       path: "/Study Abroad/MainTabNew",
       element: (
         <div>
