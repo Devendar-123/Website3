@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import {NavLink} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 
 const NavBar = () => {
@@ -14,7 +14,19 @@ const NavBar = () => {
           <li><NavLink to="/" className={({isActive})=>isActive? "active-link":"no-active"}>Home</NavLink></li>
           <li><NavLink to="/About-Us" className={({isActive})=>isActive? "active-link":"no-active"}>About us</NavLink></li>
           <li><NavLink to="/Study Abroad" className={({isActive})=>isActive? "active-link":"no-active"}>Study Abroad </NavLink></li>
-          <li><NavLink to="/Other Services" className={({isActive})=>isActive? "active-link":"no-active"}>Other Services</NavLink></li>
+          <li className='dropdown'>
+            <NavLink to="/Other Services" className={({isActive})=>isActive? "active-link":"no-active"}>Other Services</NavLink>
+          
+            <ul className="dropdown-content">
+              <li><Link to="/Other Services/test">Test Preparation</Link></li>
+              <li><Link to="/Other Services/Counselling">Career Counseling</Link></li>
+              <li><Link to="/Other Services/Admission">Admission Guidence</Link></li>
+              <li><Link to="/Other Services/Visa">Visa Assistance</Link></li>
+              <li><Link to="/Other Services/ForeignExchange">Foreign Exchange Assistance</Link></li>
+            </ul>
+          
+          </li>
+
           <li><NavLink to="/Gallery" className={({isActive})=>isActive? "active-link":"no-active"}>Gallery</NavLink></li>
           <li><NavLink to="/Success Stories" className={({isActive})=>isActive? "active-link":"no-active"}>Success Stories</NavLink></li>
           <li><NavLink to="/Contact" className={({isActive})=>isActive? "active-link":"no-active"}>Contact</NavLink></li>
