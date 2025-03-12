@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "../Contact/Contact";
-import MainTabUK from "../Abroad/MainTabUK";
+import MainTabUK from "../Abroad/Uk/MainTabUK";
 import Home from "../Home/Home";
 import About from "../About-Us/About";
 import Gallery from "../Gallery/Gallery";
@@ -13,6 +13,8 @@ import Counselling from "../Counselling/Counselling";
 import ForeignExchange from "../ForeignExchange/ForeignExchange";
 import Visa from "../Visa/Visa";
 import Admission from "../Admission/Admission";
+import France from "../Abroad/France/France";
+import USA from "../Abroad/USA/USA";
 
 const LandingPage = () => {
   const router = createBrowserRouter([
@@ -40,7 +42,33 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/MainTabUK",
+      element: (
+        <div>
+          <NavBar />
           <MainTabUK/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/France",
+      element: (
+        <div>
+          <NavBar />
+          <France/>
+        </div>
+      ),
+    },
+    {
+      path: "/Study Abroad/USA",
+      element: (
+        <div>
+          <NavBar />
+          <USA/>
         </div>
       ),
     },
