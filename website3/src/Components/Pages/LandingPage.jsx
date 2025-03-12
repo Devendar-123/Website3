@@ -7,6 +7,7 @@ import Home from "../Home/Home";
 import About from "../About-Us/About";
 import Gallery from "../Gallery/Gallery";
 import Footer from "../Footer/Footer";
+import Story from "../Stories/Story";
 import Test from "../Test/Test";
 import Counselling from "../Counselling/Counselling";
 import ForeignExchange from "../ForeignExchange/ForeignExchange";
@@ -111,6 +112,15 @@ const LandingPage = () => {
       element: (
         <div>
           <NavBar />
+        </div>
+      ),
+    },
+    {
+      path: "/Success Stories/Test",
+      element: (
+        <div>
+          <NavBar />
+          <Story/>
         </div>
       ),
     },

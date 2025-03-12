@@ -28,7 +28,13 @@ const NavBar = () => {
           </li>
 
           <li><NavLink to="/Gallery" className={({isActive})=>isActive? "active-link":"no-active"}>Gallery</NavLink></li>
-          <li><NavLink to="/Success Stories" className={({isActive})=>isActive? "active-link":"no-active"}>Success Stories</NavLink></li>
+
+          <li className='dropdown'><NavLink to="/Success Stories" className={({isActive})=>isActive? "active-link":"no-active"}>Success Stories</NavLink>
+          <ul className='dropdown-content'>
+            <li><NavLink to="/Success Stories/Test">Testimonials</NavLink></li>
+          </ul>
+          </li>
+
           <li><NavLink to="/Contact" className={({isActive})=>isActive? "active-link":"no-active"}>Contact</NavLink></li>
         </ul>
       </div>
